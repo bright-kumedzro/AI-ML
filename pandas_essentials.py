@@ -10,7 +10,12 @@ from sklearn.datasets import fetch_california_housing
 housing = fetch_california_housing()
 
 # Printing the type of the dataset
-print(type(fetch_california_housing))  # Output: <class 'sklearn.utils.Bunch'>
+type(fetch_california_housing)  # Output: <class 'sklearn.utils.Bunch'>
 
 # Creating a Pandas DataFrame
 housing_df = pd.DataFrame(housing.data, columns=housing.feature_names)
+print(housing_df.head())
+print(housing_df.shape)
+
+
+#Importing the data from a csv file to a pandas DataFrame
