@@ -21,7 +21,7 @@ data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 from transformers import AutoModelForSequenceClassification
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=2)
 
-import numpy as np
+import numpy_essentials as np
 from datasets import load_metric
  
 def compute_metrics(eval_pred):
