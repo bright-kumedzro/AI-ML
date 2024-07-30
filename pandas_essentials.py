@@ -4,6 +4,7 @@
 
 # Importing the pandas library
 import pandas as pd
+import os
 
 # Importing the California housing dataset
 from sklearn.datasets import fetch_california_housing
@@ -19,3 +20,8 @@ print(housing_df.shape)
 
 
 #Importing the data from a csv file to a pandas DataFrame
+print(os.path.exists("oritweets.csv"))
+oritweets_df = pd.read_csv("oritweets.csv")
+print(oritweets_df)
+
+housing_df.to_csv('housing_data.csv')
